@@ -1,0 +1,239 @@
+*{
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.header{
+  min-height: 100vh;
+  width:100%;
+  background-image: linear-gradient(rgba(26, 10, 10, 0.007),rgba(19, 11, 11, 0.7)),url(Fotot/Home.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.navbar{
+  display: flex;
+  padding: 10px;
+  justify-content: right;
+}
+
+.header-text{
+  list-style: none;
+  display: inline-block;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.navbar a{
+  color:white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Copperplate Gothic Light';
+
+}
+
+.navbar a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar a:hover::after{
+  width: 100%;
+}
+
+.teksti{
+  width: 100%;
+  color: white;
+  position: absolute;
+  top:50%;
+  bottom: 50%;
+  text-align: center;
+}
+
+.logo{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Copperplate Gothic Light';
+  margin: 10px 0 30px;
+}
+
+.tekstlogo{
+  font-size: 16px;
+  font-family: 'Copperplate Gothic Light';
+}
+
+.button-home {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  color:white;
+  padding: 15px 40px;
+  font-size: 17px;
+  font-family: 'Copperplate Gothic Light';
+  background: black;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 5%;
+}
+
+.button-home span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-home span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-home:hover span {
+  padding-right: 25px;
+  color: gray;
+}
+
+.button-home:hover span:after {
+  opacity: 1;
+  right: 0;
+  
+}
+
+main{
+  background-color: white;
+  
+}
+
+.main-1{
+  background-color:white;
+  height: 500px;
+  padding-bottom:3% ;
+}
+
+.text-main1{
+  text-align: center;
+}
+
+.p-main1{
+  padding-top:30px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Copperplate Gothic Light';
+  
+}
+
+#text-main{
+  width:80%;
+  margin:auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.p-row{
+  color: white;
+  font-size: 14px;
+  line-height: 22px;
+  padding:10px;
+  font-family: 'Bahnschrift Light';
+
+}
+
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-main2{
+  flex-basis: 31%;
+  background-color:#001500;
+  border-radius: 20px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition: transform .2s;
+}
+
+.text-main2:hover{ 
+  box-shadow: 0 0 20px 0px black;
+  transform: scale(1.08);
+}
+
+.t-row{
+  text-align: center;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Copperplate Gothic Light';
+}
+
+.main-2{
+  background-color:#001500;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.text-harta{
+  float: right;
+  margin-left: 10%;
+  margin-right: 5%;
+
+}
+.h-harta{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Copperplate Gothic Light';
+}
+
+.p-harta{
+  color: white;
+  font-size: 22px;
+  font-family: 'Bahnschrift Light';
+}
+
+.main-2 img{
+  display: flex;
+  float:right;
+  margin-right: 10%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 450px;
+  width: 450px;
+  transition: transform .2s;
+  
+}
+
+.main-2 img:hover{
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
