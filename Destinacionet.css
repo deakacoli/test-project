@@ -1,0 +1,122 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+body{
+  background-color: #fbfbf4;
+
+}
+
+.header{
+ margin-top: 0px;
+  width:100%;
+  background-color: #001500;
+  position: relative;
+}
+
+.navbar{
+  background-color:#001500;
+  display: flex;
+  padding: 10px;
+  height: 73px;
+  justify-content: right;
+}
+
+.header-text{
+  list-style: none;
+  display: inline-block;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.navbar a{
+  color:white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Copperplate Gothic Light';
+
+}
+
+.navbar a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar a:hover::after{
+  width: 100%;
+}
+
+.h1{
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding-top: 35px;
+  font-family: 'Copperplate Gothic Light';
+  color: #001500;
+}
+.qytetet1{
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  border: 2px rgb(0, 24, 0);
+  border-radius: 50px;
+}
+
+.qytetet2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  border: 2px rgb(0, 24, 0);
+  border-radius: 50px;
+}
+
+.kryesore img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 10%;
+ 
+}
+.qyteti p{
+  font-family: 'Copperplate Gothic Light';
+  text-size-adjust: 10p;
+  text-align: center;
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: #001500;
+
+}
+
+.qytetet:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.qyteti:hover{ 
+ 
+  transform: scale(1.08);
+}
+.tekst{
+  background-color: #001500;
+}
+#qellimi{
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Copperplate Gothic Light';
+  color: white;
+}
