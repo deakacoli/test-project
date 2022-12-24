@@ -1,6 +1,11 @@
 *{
   margin: 0;
   padding: 0;
+  
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 .header{
@@ -150,7 +155,7 @@ main{
   font-size: 15px;
   line-height: 22px;
   padding:10px;
-  font-family: 'Bahnschrift Light';
+  font-family: 'Footlight MT Light';
 
 }
 
@@ -174,7 +179,7 @@ main{
 }
 
 .text-main2:hover{ 
-  box-shadow: 0 0 20px 0px black;
+  box-shadow: 0 0 5px 0px black;
   transform: scale(1.08);
 }
 
@@ -212,7 +217,7 @@ main{
 .p-harta{
   color: white;
   font-size: 20px;
-  font-family: 'Bahnschrift Light';
+  font-family: 'Footlight MT Light';
 }
 
 .main-2 img{

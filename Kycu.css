@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  main{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(26, 10, 10, 0.007),rgba(19, 11, 11, 0.7)),url(Fotot/Home.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .navbar{
+    display: flex;
+    padding: 10px;
+    justify-content: right;
+  }
+  
+  .header-text{
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .navbar a{
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Copperplate Gothic Light';
+  
+  }
+  
+  .navbar a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .navbar a:hover::after{
+    width: 100%;
+  }
+
+  .content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+  }
+
+  .content-h1{
+    font-family: 'Copperplate Gothic Light';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 30%;
+  }
+
+
+  .form{
+    width: 320px;
+    height: 380px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+    position: absolute;
+    top: -300px;
+    left:800px;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+
+  
+  }
+
+  .form-h2{
+    font-family: 'Footlight MT Light';
+    font-weight: 300px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    
+  }
+
+  .form input{
+    width: 240px;
+    height: 35px;
+    background:transparent;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color:white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: 'Footlight MT Light';
+
+  }
+
+  .form input:focus{
+    outline: none;
+  }
+
+  ::placeholder{
+    color:white;
+    font-family: 'Footlight MT Light';
+    font-size: 15px;
+  }
+
+.btn{
+  width: 240px;
+  height: 40px;
+  background: #021b02e5;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.4s ease;
+}
+
+.btn:hover{
+ background-color:rgb(102, 102, 15)
+  
+}
+
+
+.btn a{
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+  font-family: 'Footlight MT Light';
+
+}
+
+.form .link{
+  font-family: 'Footlight MT Light';
+  font-size: 17px;
+  padding-top: 65px;
+  text-align: center;
+}
+
+
+.form .link a{
+  text-decoration: none;
+  color:darkred;
+  font-weight: bold;
+ 
+}
