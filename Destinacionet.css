@@ -11,13 +11,11 @@ body{
 
 .header{
   background-image: url(./Fotot/Destinacionet1_1406x938.jpeg) ;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   width:100%;
+  background-position: center;
+  min-height: 100vh;
   position: relative;
-  height: 750px;
-  color: #000000e0;
-  font-size: x-large;
 }
 
 .navbar{
