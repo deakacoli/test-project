@@ -1,7 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  
 }
 
 html{
@@ -37,7 +36,6 @@ html{
   font-size: 16px;
   font-weight: bold;
   font-family: 'Copperplate Gothic Light';
-
 }
 
 .navbar a::after{
@@ -116,19 +114,16 @@ html{
 .button-home:hover span:after {
   opacity: 1;
   right: 0;
-  
 }
 
 main{
   background-color: white;
-  
 }
 
 .main-1{
   background-color:white;
   height: 500px;
   padding-bottom:3% ;
- 
 }
 
 .text-main1{
@@ -140,7 +135,6 @@ main{
   font-size: 36px;
   font-weight:bold;
   font-family: 'Copperplate Gothic Light';
-  
 }
 
 #text-main{
@@ -156,7 +150,7 @@ main{
   line-height: 22px;
   padding:10px;
   font-family: 'Footlight MT Light';
-
+  text-align: left;
 }
 
 .row{
@@ -172,7 +166,6 @@ main{
   margin-bottom: 5%;
   padding: 20px 12px;
   box-sizing: border-box;
-  transition: 0.5s;
   transition: transform .2s;
   position:relative;
   height: 350px;
@@ -204,8 +197,8 @@ main{
   float: right;
   margin-left: 10%;
   margin-right: 5%;
-
 }
+
 .h-harta{
   color:rgb(228, 171, 28);
   font-size: 34px;
@@ -229,7 +222,6 @@ main{
   height: 450px;
   width: 450px;
   transition: transform .2s;
-  
 }
 
 .main-2 img:hover{
@@ -238,8 +230,8 @@ main{
 
 .main-3{
   height: 430px;
-  
 }
+
 .text-main3{
   color: black;
   text-align: center;
@@ -272,10 +264,12 @@ main{
   height: 150px;
  
 }
+
 .container-box:hover{
   transform: translateY(-15px);
 
 }
+
 .container-img img{
   height: 85px;
   width: 85px;
@@ -286,6 +280,7 @@ main{
   margin-bottom: 15px;
   
 }
+
 .container-box h4{
   font-size: 20px;
   font-weight: 600;
@@ -299,12 +294,13 @@ main{
   width: 100%;
   
 }
+
 .footer1{
   text-align: center;
   color: white;
   font-family: 'Copperplate Gothic Light';
-  
 }
+
 .footer-h{
   font-size: 18px;
   padding-top: 30px;
@@ -326,9 +322,8 @@ main{
   justify-content: center;
   padding-top: 60px;
   padding-bottom: 30px;
- 
-  
 }
+
 .socials img{
   width: 30px;
   height: 30px;
