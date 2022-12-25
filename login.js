@@ -1,25 +1,40 @@
+function validate(){
+    var emri = document.getElementById('name').value;
+    var mbiemri = document.getElementById('mbiemri').value;
+    var email=document.getElementById("email").value;
+    var password=document.getElementById("password").value;
+    var passwordREGEX=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-var error = document.getElementById("error"); 
-var passwordRegex = "^(?=.*[0-9])"+"(?=.*[a-z])(?=.*[A-Z])"+ "(?=.*[@#$%^&+=])"+ "(?=\\S+$).{8,20}$";
- var emailRegex = "^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@" + "[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$";
+    var emailREGEX=/^w+[._-]?w+@[a-z]\.[a-z]{2,3}/;
+    var emriREGEX = /^[A-Z][a-z]{2,10}/;
+    var mbiemriREGEX = /^[A-Z][a-z]{2,10}/;
+    var emriResult = emriREGEX.test(emri);
+    var mbiemriResult = mbiemriREGEX.test(mbiemri);
+    var emailResult=emailREGEX.test(email);
+    var passwordResult=passwordREGEX.test(password);
 
-
-if (emailVal.match(emailRegex)){
-        error.style.display='none';
+    if(emriResult == false)
+    {
+      alert('Please enter a valid name');
+      return false;
     }
-    if(passwordVal.match(passwordRegex)){
-        error.style.display='none';
+  
+    if( mbiemriResult == false)
+    {
+      alert('Please enter a valid surname');
+      return false;
     }
-    if(emailVal !== emailConfirmationVal){
-        error.textContent = "Email-at nuk perputhen";
-        error.style.display = 'block';
-    } else if(!emailVal.match(emailRegex)){    
-        error.textContent = "Email jo-valid!";
-        error.style.display = 'block';
-    }else if(passwordVal !== passwordConfirmationVal){
-        error.textContent = "Password-at nuk perputhen";
-        error.style.display='block';    
-    } else if(!passwordVal.match(passwordRegex)){
-        error.textContent = "Password duhet te permbaje se paku 1 lowercase,uppercase,numerik,special karakter dhe duhet te jete i gjate 8-20 karaktera";
-        error.style.display = 'block';
+    if(emailResult == false)
+    {
+      alert('Please enter a valid email');
+      return false;
     }
+    if(passwordResult == false)
+    {
+      alert('Please enter a valid password');
+      return false;
+    }
+  
+  
+    return true;
+  }
