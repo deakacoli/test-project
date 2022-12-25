@@ -32,6 +32,34 @@
                 </div>
             </main>
             
-            <script src="kyçu.js"></script>
+            <script>
+        
+
+                let emailinput = document.getElementById("email");
+                let passwordinput = document.getElementById("password");
+                
+                const defaultuser = "deaanda@gmail.com";
+                const defaultpw = "deaanda12345";
+                
+                function isEmpty(str) {
+                     return !str.trim().length;
+                }
+                
+                function validateForm(){
+                    if(isEmpty(emailinput.value) || isEmpty(passwordinput.value)){
+                        alert("All fields should have values!");
+                    }
+                    else if (emailinput.value == defaultuser && passwordinput.value == defaultpw){
+                        alert("Login success");
+                    }
+                    else{
+                        alert("Wrong username or password");    
+                    }
+                }
+        
+        
+        
+        
+            </script>
         </body>
 </html>
