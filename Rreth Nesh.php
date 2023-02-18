@@ -1,3 +1,18 @@
+<?php
+session_start();
+$hide="";
+if(!isset($_SESSION['username'])){
+    header("location:Kycu.php");
+}else{
+    if($_SESSION['role'] == "admin"){
+        $hide="";
+    }else{
+        $hide="hide";
+    }
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,8 +31,15 @@
                         <a class="header-text" href="Komunat.html">KOMUNAT</a>
                         <a class="header-text" href="Destinacionet.html">DESTINACIONET</a>
                         <a class="header-text" href="Kycu.html">KYÇU</a>
+                        <a class="header-text" href="logout.php">LogOut</a>
+                        <a style="padding:30px" href="dashboard.php" class="<?=$hide?>">Dashboard</a>
                     </div>  
                 </div>
+                <style>
+                    .hide{
+                        display:none;
+                    }
+            </style>
             </header>
 
             <div class="teksti">
@@ -150,4 +172,11 @@
             <script src="explorekosovo.js"></script>
         </body>
 </html>
+
+
+<?php
+
+}
+
+?>
   

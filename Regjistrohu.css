@@ -65,7 +65,7 @@
 
   .form{
     width: 320px;
-    height: 470px;
+    height: 430px;
     background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
     position: absolute;
     top: -360px;
@@ -102,7 +102,7 @@
     color:white;
     font-size: 17px;
     letter-spacing: 1px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-family: 'Footlight MT Light';
     padding-left: 10px;
   }

@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(isset($_SESSION['username'])){
+  header("location:Rreth Nesh.php");
+}else{
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -21,7 +29,7 @@
 
                 <div class="content">
                     <h1 class="content-h1">Eksploro Kosovën</h1>
-                        <form action="" onsubmit="validateForm()">
+                        <form action="KycuValidation.php" method="post">
                             <div class="form">
                                     <h2 class="form-h2">Kyçu në llogarinë tuaj</h2>
                                     <input type="text" name="username" id="username" placeholder="Emri i përdoruesit">
@@ -35,34 +43,11 @@
                 </div>
             </main>
             
-            <script>
-        
-
-                let usernameinput = document.getElementById("username");
-                let passwordinput = document.getElementById("password");
-                
-                const defaultuser = "deaanda";
-                const defaultpw = "deaanda12345";
-                
-                function isEmpty(str) {
-                     return !str.trim().length;
-                }
-                
-                function validateForm(){
-                    if(isEmpty(usernameinput.value) || isEmpty(passwordinput.value)){
-                        alert("All fields should have values!");
-                    }
-                    else if (usernameinput.value == defaultuser && passwordinput.value == defaultpw){
-                        alert("Login success");
-                    }
-                    else{
-                        alert("Wrong username or password");    
-                    }
-                }
-        
-        
-        
-        
-            </script>
         </body>
 </html>
+
+<?php
+
+}
+
+?>
