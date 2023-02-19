@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(26, 10, 10, 0.007),rgba(19, 11, 11, 0.7)),url(Fotot/food.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .navbar{
+    display: flex;
+    padding: 10px;
+    justify-content: right;
+  }
+  
+  .header-text{
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .navbar a{
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Copperplate Gothic Light';
+  }
+  
+  .navbar a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .navbar a:hover::after{
+    width: 100%;
+  }
+  
+  .teksti{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top:50%;
+    bottom: 50%;
+    text-align: center;
+  }
+  
+  .logo{
+    color: white;
+    font-size: 43px;
+    font-weight: bold;
+    font-family: 'Copperplate Gothic Light';
+    margin: 10px 0 30px;
+  }
+
+  main{
+    height: 500%;
+    width: 100%;
+    background-color:white;
+    justify-content: center;
+    
+  }
+
+  .main-text{
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+
+  .main-h1{
+    font-family: 'Copperplate Gothic Light';
+    font-size: 38px;
+  }
+
+  .main-p{
+    font-family: 'Footlight MT Light';
+    font-size: 20px;
+    
+  }
+
+  .slider-container {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #000;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+
+  .main-2{
+    margin-top: 35px;
+    background-color:#001500;
+
+  }
+
+  .main2-h1{
+    font-family: 'Copperplate Gothic Light';
+    font-size: 38px;
+    margin-left: 110px;
+    color: white;
+    padding-top: 40px;
+  }
+
+  .main2-p{
+    font-family: 'Footlight MT Light';
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
+    
+  }
+
+  .main3{
+      display: flex;
+      align-items: center;
+      margin-left: 7%;
+      margin-right: 7%;
+      margin-top: 5px;
+  }
+
+
+  .main3-h2{
+    font-family: 'Copperplate Gothic Light';
+    color: white;
+    flex: 1;
+  }
+
+  .main3-p{
+    font-family: 'Footlight MT Light';
+    color: white;
+    font-size: 20px;
+
+  }
+ 
+ .photo {
+    flex: 1;
+    text-align: right;
+
+  }
+  
+  .main3-img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .main-textt{
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 60px;
+    
+  }
+
+  .message-box {
+    width: 80%;
+    height: 400px;
+    border: 1px solid #0c0a0a;
+    background-color: #0a0909;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-left: 8%;
+    
+  }
+  
+  .message-box textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    resize: none;
+    border: 2px solid #0c0a0a;
+    
+  }
+
+  ::placeholder{
+    color: darkred;
+    font-weight: bold;
+    font-family: 'Footlight MT Light';
+    font-size: 20px;
+
+
+  }
+
+  .footer{
+    height: 250px;
+    background-color: #231709;
+    width: 100%;
+    
+  }
+  
+  .footer1{
+    text-align: center;
+    color: white;
+    font-family: 'Copperplate Gothic Light';
+  }
+  
+  .footer-h{
+    font-size: 18px;
+    padding-top: 30px;
+  }
+  
+  .footer-p{
+    font-size: 15px;
+    padding-top: 20px;
+  }
+  
+  .footer-p2{
+    color: white;
+    font-size: 13px;
+  }
+  
+  .socials{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  
+  .socials img{
+    width: 30px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #001500;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: rgb(230, 230, 230);
+    background-image: -webkit-gradient(linear,
+                    40% 0%,
+                     75% 84%,
+              from(white),
+              to(white),
+              color-stop(.8, rgb(227, 238, 227)))
+  }
+  
+  
+  
+  
+  
+  
+  
+  

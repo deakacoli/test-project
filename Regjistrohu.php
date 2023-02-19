@@ -12,10 +12,10 @@
             <main id="main">
                 <div class="navbar">
                     <div class="menu">
-                        <a class="header-text" href="Rreth Nesh.html">RRETH NESH</a>
-                        <a class="header-text" href="Komunat.html">KOMUNAT</a>
-                        <a class="header-text" href="Destinacionet.html">DESTINACIONET</a>
-                        <a class="header-text" href="Kycu.html">KYÇU</a>
+                        <a class="header-text" href="Rreth Nesh.php">RRETH NESH</a>
+                        <a class="header-text" href="Komunat.php">KOMUNAT</a>
+                        <a class="header-text" href="Destinacionet.php">DESTINACIONET</a>
+                        <a class="header-text" href="Kycu.php">KYÇU</a>
                     </div>  
                 </div>  
 
@@ -35,40 +35,7 @@
                         </form>
                 </div>
             </main>
-            <script>
-                const name = document.getElementById("name");
-                const sname = document.getElementById("surname");
-                const email = document.getElementById("email");
-                const password = document.getElementById("password");
-                const confirmpassword = document.getElementById("confirmpassword");
-        
-        
-                function isEmpty(str) {
-                     return !str.trim().length;
-                }
-        
-                function validateForm(){
-                    if( isEmpty(name.value) ||isEmpty(sname.value) ||
-                        isEmpty(email.value) ||isEmpty(password.value) ||
-                        isEmpty(confirmpassword.value)){
-                        alert("All fields should have values!")
-                    }
-                    else if(password.value !== confirmpassword.value){
-                        alert("Passwords should match!")
-                    } 
-                    else if((password.value).length < 8 ){
-                        alert("Password should be longer than 8 characters!")
-                    }
-                    else if(!(email.value).match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)){
-                        alert("Email is not valid!")
-                    }
-                
-                }
-        
-        </script>
-
-
-
-
+           
+            <script src="regjistrohu.js"></script>
         </body>
 </html>

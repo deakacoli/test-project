@@ -27,7 +27,7 @@ if (isset($_POST['loginBtn'])){
                 exit();
             }else{
                 if($i == sizeOf($users)){
-               echo "Username or Password are wrong!";
+               echo "Username or Password is incorrect!";
                 exit();
                 }
             }

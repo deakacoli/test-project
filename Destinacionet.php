@@ -12,10 +12,10 @@
             <header>
               <div class="header">
                 <div class="navbar">
-                  <a class="header-text" href="Rreth Nesh.html">RRETH NESH</a>
-                  <a class="header-text" href="Komunat.html">KOMUNAT</a>
-                  <a class="header-text" href="Destinacionet.html">DESTINACIONET</a>
-                  <a class="header-text" href="Kycu.html">KYÇU</a>
+                  <a class="header-text" href="Rreth Nesh.php">RRETH NESH</a>
+                  <a class="header-text" href="Komunat.php">KOMUNAT</a>
+                  <a class="header-text" href="Destinacionet.php">DESTINACIONET</a>
+                  <a class="header-text" href="Kycu.php">KYÇU</a>
                 </div>  
                   <div class="titulliheader">
                     <h1>Destinacionet</h1>

@@ -20,16 +20,16 @@ if(isset($_SESSION['username'])){
             <main id="main">
                 <div class="navbar">
                     <div class="menu">
-                        <a class="header-text" href="Rreth Nesh.html">RRETH NESH</a>
-                        <a class="header-text" href="Komunat.html">KOMUNAT</a>
-                        <a class="header-text" href="Destinacionet.html">DESTINACIONET</a>
-                        <a class="header-text" href="Kycu.html">KYÇU</a>
+                        <a class="header-text" href="Rreth Nesh.php">RRETH NESH</a>
+                        <a class="header-text" href="Komunat.php">KOMUNAT</a>
+                        <a class="header-text" href="Destinacionet.php">DESTINACIONET</a>
+                        <a class="header-text" href="Kycu.php">KYÇU</a>
                     </div>  
                 </div>  
 
                 <div class="content">
                     <h1 class="content-h1">Eksploro Kosovën</h1>
-                        <form action="KycuValidation.php" method="post">
+                        <form onsubmit="validateForm()" action="KycuValidation.php" method="post">
                             <div class="form">
                                     <h2 class="form-h2">Kyçu në llogarinë tuaj</h2>
                                     <input type="text" name="username" id="username" placeholder="Emri i përdoruesit">
@@ -37,11 +37,13 @@ if(isset($_SESSION['username'])){
                                         <p class="form-p">Keni harruar fjalëkalimin ?</p>
                                     <button type="submit" class="btn" name= "loginBtn"><a href="#">Kyçu</a></button>
                                         <p class="link">Nuk jeni të regjistruar ?<br>
-                                        <a href="Regjistrohu.html">Regjistrohuni</a> këtu ! </a></p>
+                                        <a href="Regjistrohu.php">Regjistrohuni</a> këtu ! </a></p>
                             </div>
                         </form>
                 </div>
             </main>
+
+            <script src="kycu.js"></script>
             
         </body>
 </html>

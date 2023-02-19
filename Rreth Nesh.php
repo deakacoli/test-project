@@ -27,12 +27,11 @@ if(!isset($_SESSION['username'])){
             <header>
                 <div class="header">
                     <div class="navbar">
-                        <a class="header-text" href="Rreth Nesh.html">RRETH NESH</a>
-                        <a class="header-text" href="Komunat.html">KOMUNAT</a>
-                        <a class="header-text" href="Destinacionet.html">DESTINACIONET</a>
-                        <a class="header-text" href="Kycu.html">KYÇU</a>
-                        <a class="header-text" href="logout.php">LogOut</a>
-                        <a style="padding:30px" href="dashboard.php" class="<?=$hide?>">Dashboard</a>
+                        <a class="header-text" href="Rreth Nesh.php">RRETH NESH</a>
+                        <a class="header-text" href="Komunat.php">KOMUNAT</a>
+                        <a class="header-text" href="Destinacionet.php">DESTINACIONET</a>
+                        <a class="header-text" href="logout.php">ÇKYÇU</a>
+                        <a style="padding:30px" href="dashboard.php" class="<?=$hide?>">DASHBOARD</a>
                     </div>  
                 </div>
                 <style>
@@ -127,7 +126,7 @@ if(!isset($_SESSION['username'])){
                             <div class="container-img">
                                 <img src="./Fotot/travel1.png"/>
                             </div>
-                                <h4>Ushqimet Tradicionale</h4>
+                               <a style=" color:black; text-decoration: none; font-size: 20px; font-weight: 600; font-family: 'Copperplate Gothic Light';" href="Ushqimet Tradicionale.php">Ushqimet Tradicionale</a>
                         </div>
 
                         <div class="container-box">
