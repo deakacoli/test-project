@@ -97,6 +97,7 @@
     margin: 0 auto;
     position: relative;
     
+    
   }
   
   .prev-btn, .next-btn {
@@ -106,8 +107,8 @@
     cursor: pointer;
     border: none;
     background: none;
-    font-size: 30px;
-    color: #000;
+    font-size: 80px;
+    color: #050505;
   }
   
   .prev-btn {
@@ -122,6 +123,7 @@
     width: 100%;
     height: 500px;
     object-fit: cover;
+    border-radius: 70px; 
   }
 
 
@@ -179,6 +181,7 @@
   .main3-img {
     max-width: 80%;
     height: auto;
+    border-radius: 10px; 
   }
 
   .main-textt{
@@ -193,12 +196,13 @@
 
   .message-box {
     width: 80%;
-    height: 400px;
     border: 1px solid #0c0a0a;
     background-color: #0a0909;
     padding: 10px;
     margin-bottom: 50px;
     margin-left: 8%;
+    border-radius: 10px;
+  
     
   }
   
@@ -210,16 +214,39 @@
     border: none;
     resize: none;
     border: 2px solid #0c0a0a;
+    border-radius: 10px;
     
   }
 
+  .message-box textarea:hover{
+    cursor:pointer;
+    background-color: #dddddd;
+  }
+
+  .button{
+    width: 110px; 
+    height: 40px; 
+    background-color:white; 
+    border: none; 
+    margin-top: 10px; 
+    font-size: 19px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    color: black; 
+    font-family: 'Footlight MT Light'; 
+    font-weight: bold;
+    font-size:23px;
+  }
+
+  .button:hover{
+    background-color: #726f6f;
+  }
+
   ::placeholder{
-    color: darkred;
+    color: black;
     font-weight: bold;
     font-family: 'Footlight MT Light';
     font-size: 20px;
-
-
   }
 
   .footer{

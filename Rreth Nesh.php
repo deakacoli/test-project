@@ -1,18 +1,3 @@
-<?php
-session_start();
-$hide="";
-if(!isset($_SESSION['username'])){
-    header("location:Kycu.php");
-}else{
-    if($_SESSION['role'] == "admin"){
-        $hide="";
-    }else{
-        $hide="hide";
-    }
-
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -30,15 +15,9 @@ if(!isset($_SESSION['username'])){
                         <a class="header-text" href="Rreth Nesh.php">RRETH NESH</a>
                         <a class="header-text" href="Komunat.php">KOMUNAT</a>
                         <a class="header-text" href="Destinacionet.php">DESTINACIONET</a>
-                        <a class="header-text" href="logout.php">ÇKYÇU</a>
-                        <a style="padding:30px" href="dashboard.php" class="<?=$hide?>">DASHBOARD</a>
+                        <a class="header-text" href="Kycu.php">KYÇU</a>
                     </div>  
                 </div>
-                <style>
-                    .hide{
-                        display:none;
-                    }
-            </style>
             </header>
 
             <div class="teksti">
@@ -48,7 +27,7 @@ if(!isset($_SESSION['username'])){
                         Asnjë rrethanë në të kaluarën apo të ardhmen nuk mund ta bëjë atë të humbasë 
                         shkëlqimin e saj.
                     </p>
-                    <button class="button-home" style="vertical-align:middle"><a style="color: white; text-decoration: none;" href="Rreth Nesh.html#main"><span>Lexo më shumë</span></a></button>
+                    <button class="button-home" style="vertical-align:middle"><a style="color: white; text-decoration: none;" href="Rreth Nesh.php#main"><span>Lexo më shumë</span></a></button>
             </div>
 
             <main id="main">
@@ -133,7 +112,7 @@ if(!isset($_SESSION['username'])){
                             <div class="container-img">
                                 <img src="./Fotot/travel2.png"/>
                             </div>
-                                <h4>Aventurat Verore</h4>
+                            <a style=" color:black; text-decoration: none; font-size: 20px; font-weight: 600; font-family: 'Copperplate Gothic Light';" href="Aktivitetet.php">Aktivitetet sipas stinëve</a>
                         </div>
 
                         <div class="container-box">
@@ -173,9 +152,4 @@ if(!isset($_SESSION['username'])){
 </html>
 
 
-<?php
 
-}
-
-?>
-  

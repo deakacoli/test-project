@@ -47,7 +47,9 @@
                     <h1 class="main2-h1">Çfarë të hani në Kosovë?</h1>
                     <br>
                     <p class="main2-p">
-                        Në ushqimet që provoni në Kosovë ndonjëherë merrni shije të kuzhinave të tjera ballkanike, por të gjitha pjatat këtu kanë shijen e tyre unike. Ja disa nga ushqimet kosovare që duhet t'i provoni gjatë vizitës në këtë vend.
+                        Në ushqimet që provoni në Kosovë ndonjëherë merrni shije të kuzhinave të tjera ballkanike,
+                        por të gjitha pjatat këtu kanë shijen e tyre unike. Ja disa nga ushqimet kosovare që duhet
+                        t'i provoni gjatë vizitës në këtë vend.
                     </p>
                     <br>
                        
@@ -237,6 +239,8 @@
                                 <img class="main3-img"src="Fotot/drink3.jpg" alt="Image">
                             </div>
                         </div>
+                        <br>
+                        <br>
                 </div>
 
                 <div class="main-textt">
@@ -253,14 +257,13 @@
                 </div>
 
                 <div class="message-box">
-                    <textarea  class="box-text" placeholder="Këtu mund të shkruani mendimin tuaj për ushqimin dhe pijet e Kosovës..."></textarea>
+                    <form action="">
+                    <textarea class="box-text" placeholder="Këtu mund të shkruani mendimin tuaj për ushqimin dhe pijet e Kosovës..." name="" id="area" cols="30" rows="20"></textarea>
+                    <input type="submit" class="button" id="bt-n" value="Dërgo">
+                    </form>
                 </div>
 
-
             </main>
-
-
-
 
             <footer class="footer">
                 <div class="footer1">

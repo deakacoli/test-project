@@ -1,11 +1,3 @@
-<?php
-session_start();
-if(isset($_SESSION['username'])){
-  header("location:Rreth Nesh.php");
-}else{
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,7 +15,6 @@ if(isset($_SESSION['username'])){
                         <a class="header-text" href="Rreth Nesh.php">RRETH NESH</a>
                         <a class="header-text" href="Komunat.php">KOMUNAT</a>
                         <a class="header-text" href="Destinacionet.php">DESTINACIONET</a>
-                        <a class="header-text" href="Kycu.php">KYÇU</a>
                     </div>  
                 </div>  
 
@@ -48,8 +39,3 @@ if(isset($_SESSION['username'])){
         </body>
 </html>
 
-<?php
-
-}
-
-?>

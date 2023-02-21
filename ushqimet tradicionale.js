@@ -30,3 +30,4 @@ nextBtn.addEventListener('click', () => {
   }
   changeImage();
 });
+
