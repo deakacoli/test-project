@@ -38,6 +38,10 @@ if(isset($_POST['submit'])){
             <style>
                    #pad{
                     padding:30px;
+                    text-decoration: none;
+                    list-style: none;
+                    color:white;
+                    font-weight:bold;
                    }
             </style>
                 <nav>
@@ -47,7 +51,7 @@ if(isset($_POST['submit'])){
                     </label> 
                     <ul>
                         <li><a href="home.php">RRETH NESH</a></li>
-                        <li><a class="active" href="Komunat.php">KOMUNAT</a></li>
+                        <li><a class="active" href="komunat.php">KOMUNAT</a></li>
                         <li><a href="kontakti.php">KONTAKTI</a></li>
                         <?php
                              if (!(isset($_SESSION['role']))) {

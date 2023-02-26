@@ -94,7 +94,7 @@ if(!isset($_SESSION['email'])){
                       <p class="footer-p2">Eksploro Kosovën @2022</p>
               </div>
           </footer>
-          <script src="./js/aktivitetet.js"></script>
+         
       </body>
 </html>
 
