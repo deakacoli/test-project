@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Footlight MT Light';
+}
+body {
+  min-height: 100vh;
+}
+
+li a{
+  list-style: none;
+  text-decoration: none;
+  color:white
+}
+
+li a:hover {
+  color: darkred;
+}
+
+h1{
+  color: white
+}
+
+.side-menu {
+  position: fixed;
+  background: #053a05e5;
+  width: 20vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 10px 10px 0;
+}
+.side-menu .brand-name {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.side-menu li a{
+  font-size: 24px;
+  padding: 10px 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.side-menu li a:hover {
+  background: white;
+  color: darkred;
+  font-weight: bold;
+  border-radius: 0 15px 15px 0;
+}
+.container {
+  position: absolute;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+  background: #f1f1f1;
+}
+.container .header {
+  position: fixed;
+  top: 0;
+  width: 80vw;
+  height: 10vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding-top: 15px;
+  
+}
+
+
+
+
+#a1 {
+  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  background-color:white;
+  margin-top: 50px;
+}
+
+header,
+table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 150px;
+  margin: a auto;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+  font-size: 18pt;
+  font-weight: bold;
+  padding: 10px 0px;
+  padding-bottom: 30px;
+  
+}
+
+button {
+  background-color: white;
+  width: 100px;
+  height: 35px;
+  border-radius: 30px;
+  
+}
+
+
+td {
+  width: 400px;
+  padding: 8px;
+ 
+}
+
+th {
+  background-color: rgb(53, 52, 52);
+  color: white;
+  padding: 13px;
+  font-size: 14pt;
+}
+
+#de {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  padding-right: 5px;
+  width: 100%;
+}
+
+#d {
+  background-color: rgb(201, 24, 24);
+  color: white;
+  font-weight: bold;
+  font-family: 'Copperplate Gothic Light';
+  font-size: 15px;
+}
+
+#e {
+  background-color: rgb(18, 18, 145);
+  color: white;
+  font-weight: bold;
+  font-family: 'Copperplate Gothic Light';
+  font-size: 15px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(199, 196, 199);
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #001500;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background-color: rgb(230, 230, 230);
+  background-image: -webkit-gradient(linear,
+                  40% 0%,
+                   75% 84%,
+            from(white),
+            to(white),
+            color-stop(.8, rgb(227, 238, 227)))
+}
+

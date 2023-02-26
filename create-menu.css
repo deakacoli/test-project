@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding:0;
+  font-family:'Footlight MT Light', 'Copperplate Gothic Light';
+}
+
+body{
+  background: #053a05e5;
+}
+.navbar {
+  z-index: 1;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 35px;
+}
+
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.navbar li a:hover {
+  color: gray;
+  transition: 0.8s;
+}
+
+.form {
+  margin: 0 auto;
+  width: 450px;
+  height: auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form h3 {
+  text-align: center;
+  font-size: 24px;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+
+.form div {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 10px;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.form div img {
+  width: 30px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+
+
+.form input[type="text"],
+.form input[type="file"] {
+  flex: 1;
+  margin: 0;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  margin-left:10px;
+  
+}
+
+textarea{
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  margin-left: 8px;
+}
+
+.contenti{
+  margin-right: 12px;
+}
+
+.form input[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkred;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
