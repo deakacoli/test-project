@@ -1,22 +1,17 @@
-
-let usernameinput = document.getElementById("username");
-let passwordinput = document.getElementById("password");
-
-const defaultuser = "deaanda";
-const defaultpw = "deaanda12345";
-
-function isEmpty(str) {
-     return !str.trim().length;
-}
-
-function validateForm(){
-    if(isEmpty(usernameinput.value) || isEmpty(passwordinput.value)){
-        alert("All fields should have values!");
+function validateForm() {
+   
+    var email = document.forms["form"]["email"].value;
+    var fjalkalimi = document.forms["form"]["fjalkalimi"].value;
+    
+   
+    
+     if (email == "") {
+         alert( "Please enter a valid email address!");
+       return false;
+     }
+   
+     if (fjalkalimi == "") {
+         alert( "Please enter a valid password!");
+       return false;
+     }
     }
-    else if (usernameinput.value == defaultuser && passwordinput.value == defaultpw){
-        alert("Login success");
-    }
-    else{
-        alert("Wrong username or password");    
-    }
-}

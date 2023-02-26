@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+require_once ('modelUshqimet.php');
+?>
+ 
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,17 +13,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eksploro Kosovën</title>
-        <link rel="stylesheet" href="Ushqimet Tradicionale.css">
+        <link rel="stylesheet" href="./css/ushqimettradicionale.css">
         <link rel="icon" type="image/x-icon" href="./Fotot/icon.png">
     </head>    
         <body>
             <header>
+            <style>
+                   #pad{
+                    padding:30px;
+                   }
+            </style>
                 <div class="header">
                     <div class="navbar">
-                        <a class="header-text" href="Rreth Nesh.php">RRETH NESH</a>
-                        <a class="header-text" href="Komunat.php">KOMUNAT</a>
-                        <a class="header-text" href="Destinacionet.php">DESTINACIONET</a>
-                        <a class="header-text" href="Kycu.php">KYÇU</a>
+                        <a class="header-text" href="home.php">RRETH NESH</a>
+                        <a class="header-text" href="komunat.php">KOMUNAT</a>
+                        <a class="header-text" href="kontakti.php">KONTAKTI</a>
+                        
+                        <?php
+                             if (!(isset($_SESSION['role']))) {
+                                echo "<a class='ula' id='pad' href='kycu.php'>KYÇU</a>";
+                            } else if (isset($_SESSION['role']) == 'user') {
+                                echo "<a class='ula' id='pad' href='logout.php'>ÇKYÇU</a>";
+                            }
+                         ?>
+
                     </div>  
                 </div>
             </header>
@@ -26,16 +47,11 @@
 
             <main id="main">
                 <div class="main-text">
-                    <h1 class="main-h1">Ushqimet pijet dhe ëmbëlsirat në Kosovë</h1>
-                    <br>
-                    <p class="main-p">Shumë kultura të ndryshme kanë ndikuar në ushqimin vendas në Kosovë, por më shumë nga kuzhinat turke, shqiptare dhe ballkanike.<br>
-                                      Qumështi, mishi dhe buka janë elementë thelbësorë në dietën e Kosovës dhe frutat dhe perimet. Gatimet ndryshojnë nga dimri në verë, <br>
-                                      dhe perimet si domatet dhe kastravecat e famshme të Kosovës konsumohen gjatë verës së ngrohtë, ndërsa turshitë piqen në dimër.<br>
-                                      Ushqimet tradicionale në Kosovë, si flija, byrekët, specat e mbushur, qebapët, bureqet dhe sarma, janë tipike në të gjitha rajonet, <br>
-                                      me ndryshime të vogla nga njëri rajon në tjetrin.Nuk është çudi që të shijoni kuzhinën e jashtëzakonshme kosovare dhe verën vendase të <br>
-                                      Kosovës është një nga gjërat më të mira për të bërë në Kosovë gjatë një udhëtimi këtu.
-                    </p>
+                    <h1 class="main-h1">Ushqimet pijet dhe ëmbëlsirat në Kosovë</h1>  
                 </div>
+
+                <br>
+                <br>
 
                 <div class="slider-container">
                     <button class="prev-btn">&#10094;</button>
@@ -47,18 +63,43 @@
                     <h1 class="main2-h1">Çfarë të hani në Kosovë?</h1>
                     <br>
                     <p class="main2-p">
-                        Në ushqimet që provoni në Kosovë ndonjëherë merrni shije të kuzhinave të tjera ballkanike,
-                        por të gjitha pjatat këtu kanë shijen e tyre unike. Ja disa nga ushqimet kosovare që duhet
-                        t'i provoni gjatë vizitës në këtë vend.
+                                     Shumë kultura të ndryshme kanë ndikuar në ushqimin vendas në Kosovë, por më shumë nga kuzhinat turke, shqiptare dhe ballkanike.
+                                      Qumështi, mishi dhe buka janë elementë thelbësorë në dietën e Kosovës dhe frutat dhe perimet. Gatimet ndryshojnë nga dimri në verë, 
+                                      dhe perimet si domatet dhe kastravecat e famshme të Kosovës konsumohen gjatë verës së ngrohtë, ndërsa turshitë piqen në dimër.
+                                      Ushqimet tradicionale në Kosovë, si flija, byrekët, specat e mbushur, qebapët, bureqet dhe sarma, janë tipike në të gjitha rajonet, 
+                                      me ndryshime të vogla nga njëri rajon në tjetrin.Nuk është çudi që të shijoni kuzhinën e jashtëzakonshme kosovare dhe verën vendase të 
+                                      Kosovës është një nga gjërat më të mira për të bërë në Kosovë gjatë një udhëtimi këtu.
+                                      Në ushqimet që provoni në Kosovë ndonjëherë merrni shije të kuzhinave të tjera ballkanike,
+                                      por të gjitha pjatat këtu kanë shijen e tyre unike. Ja disa nga ushqimet kosovare që duhet
+                                      t'i provoni gjatë vizitës në këtë vend.
                     </p>
                     <br>
-                       
+
+                    <div class="main3">
+                         <?php
+                              $ushqimet = new modelUshqimet;
+                              $all = $ushqimet->readData();
+                              for($i = 0; $i < count($all); $i++){
+                                  echo '<div class="main3-h2">
+                                           <h3>'.$all[$i]['title'].'</h3>
+                                           <br>
+                                           <br>
+                                           <p>' .$all[$i]['body']. '</p>
+                                       </div>
+    
+                                       <div class="photo">
+                                            <img src="' .$all[$i]['image'].'">
+                                        </div>';
+                                 }
+                        ?>
+                    </div>
+                       <!--
                         <div class="main3">
                             <div class="main3-h2">
                                 <h2>- Byreku -</h2>
                                 <br>
                                 <br>
-                                <p class="main3-p">Një pastë e mbushur me mish, spinaq ose djathë, byreku është 
+                                <p >Një pastë e mbushur me mish, spinaq ose djathë, byreku është 
                                                     një vakt i preferuar i të gjitha kohërave. Disa versione 
                                                     përfshijnë orizin së bashku me mishin e grirë, duke e bërë atë
                                                     një vakt perfekt gjithëpërfshirës. Burekët në Kosovë zakonisht
@@ -67,7 +108,7 @@
                                 </p>
                             </div>
                             <div class="photo">
-                                <img class="main3-img"src="Fotot/food1.jpg" alt="Image">
+                                <img src="Fotot/food1.jpg" alt="Image">
                             </div>
                         </div>
                         <br>
@@ -84,7 +125,7 @@
                                                 alternuara të brumit dhe kremit mbushen në një tigan dhe piqen
                                                 një shtresë një nga 5 deri në 6 orë.<br><br>
                                                 A nuk është kjo punë e mundimshme?<br> Është ndoshta ajo që e bën 
-                                                flijen të shijojë shumë më të ëmbël.. 
+                                                flijen të shijojë shumë më të ëmbël. 
                                 </p>
                             </div>
                             <div class="photo">
@@ -186,9 +227,6 @@
                         </div>
                         <br>
                         <br>
-                        <h1 class="main2-h1">Çfarë të pini në Kosovë?</h1>
-                        <br>
-                        <br>
                         <div class="main3">
                             <div class="main3-h2">
                                 <h2>- Verë -</h2>
@@ -238,30 +276,9 @@
                             <div class="photo">
                                 <img class="main3-img"src="Fotot/drink3.jpg" alt="Image">
                             </div>
-                        </div>
-                        <br>
-                        <br>
-                </div>
-
-                <div class="main-textt">
-                    <h1 class="main-h1">Sa kushton për të ngrënë në Kosovë?</h1>
-                    <br>
-                    <p class="main-p">Kostoja e ushqimit në Kosovë varet nga ajo që hani, por duke qenë një nga 
-                        vendet më të lira në Evropë, ushqimi është përkatësisht i lirë. Mund të shijoni një vakt 
-                        për pak euro, një Coca-Cola ose Pepsi për 1 Euro ose një birrë për 1.5 Euro. Një vakt me
-                         3 pjata në një interval mesatar mund t'ju kushtojë diku nga 10 deri në 20 euro.Një 
-                         kilogram mollë kushton rreth gjysmë euro, ndërsa një shishe verë e mesme kushton 4 ose 
-                         5 euro. Kombinoje atë me koston e lirë të udhëtimit në Kosovë, dhe ju keni vendin perfekt
-                        për një pushim buxhetor në Evropë!
-                    </p>
-                </div>
-
-                <div class="message-box">
-                    <form action="">
-                    <textarea class="box-text" placeholder="Këtu mund të shkruani mendimin tuaj për ushqimin dhe pijet e Kosovës..." name="" id="area" cols="30" rows="20"></textarea>
-                    <input type="submit" class="button" id="bt-n" value="Dërgo">
-                    </form>
-                </div>
+                        </div> -->
+                       
+                </div>   
 
             </main>
 
@@ -287,7 +304,7 @@
                 </div>
             </footer>
 
-            <script src="ushqimet tradicionale.js"></script>
+            <script src="./js/ushqimet tradicionale.js"></script>
 
         </body>
 </html>

@@ -6,7 +6,7 @@
   .header{
     min-height: 100vh;
     width:100%;
-    background-image: linear-gradient(rgba(26, 10, 10, 0.007),rgba(19, 11, 11, 0.7)),url(Fotot/food.jpg);
+    background-image: linear-gradient(rgba(26, 10, 10, 0.007),rgba(19, 11, 11, 0.7)),url(../Fotot/food.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -74,7 +74,7 @@
   }
 
   .main-text{
-    text-align: left;
+    text-align: center;
     margin-top: 25px;
     margin-bottom: 15px;
     margin-left: 110px;
@@ -86,11 +86,6 @@
     font-size: 38px;
   }
 
-  .main-p{
-    font-family: 'Footlight MT Light';
-    font-size: 20px;
-    
-  }
 
   .slider-container {
     width: 85%;
@@ -130,6 +125,7 @@
   .main-2{
     margin-top: 35px;
     background-color:#001500;
+    text-align: justify;
 
   }
 
@@ -150,12 +146,13 @@
     
   }
 
+
   .main3{
-      display: flex;
+      display:block;
       align-items: center;
       margin-left: 7%;
       margin-right: 7%;
-      margin-top: 5px;
+      padding-bottom: 50px;
   }
 
 
@@ -163,91 +160,31 @@
     font-family: 'Copperplate Gothic Light';
     color: white;
     flex: 1;
+    word-wrap: break-word;
+    width: 40%;
+    position: absolute;
+    margin-top: 105px;
   }
 
-  .main3-p{
+ 
+  p{
     font-family: 'Footlight MT Light';
     color: white;
     font-size: 20px;
-
   }
  
  .photo {
     flex: 1;
     text-align: right;
-
+    margin-top: 40px;
   }
   
-  .main3-img {
-    max-width: 80%;
-    height: auto;
+  .photo img{
+    width: 500px;
+    height: 350px;
     border-radius: 10px; 
   }
 
-  .main-textt{
-    text-align: left;
-    margin-top: 50px;
-    margin-bottom: 15px;
-    margin-left: 110px;
-    margin-right: 110px;
-    margin-bottom: 60px;
-    
-  }
-
-  .message-box {
-    width: 80%;
-    border: 1px solid #0c0a0a;
-    background-color: #0a0909;
-    padding: 10px;
-    margin-bottom: 50px;
-    margin-left: 8%;
-    border-radius: 10px;
-  
-    
-  }
-  
-  .message-box textarea {
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    padding: 10px;
-    border: none;
-    resize: none;
-    border: 2px solid #0c0a0a;
-    border-radius: 10px;
-    
-  }
-
-  .message-box textarea:hover{
-    cursor:pointer;
-    background-color: #dddddd;
-  }
-
-  .button{
-    width: 110px; 
-    height: 40px; 
-    background-color:white; 
-    border: none; 
-    margin-top: 10px; 
-    font-size: 19px; 
-    border-radius: 10px; 
-    cursor: pointer; 
-    color: black; 
-    font-family: 'Footlight MT Light'; 
-    font-weight: bold;
-    font-size:23px;
-  }
-
-  .button:hover{
-    background-color: #726f6f;
-  }
-
-  ::placeholder{
-    color: black;
-    font-weight: bold;
-    font-family: 'Footlight MT Light';
-    font-size: 20px;
-  }
 
   .footer{
     height: 250px;

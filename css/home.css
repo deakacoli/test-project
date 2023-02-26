@@ -10,7 +10,7 @@ html{
 .header{
   min-height: 100vh;
   width:100%;
-  background-image: linear-gradient(rgba(26, 10, 10, 0.007),rgba(19, 11, 11, 0.7)),url(Fotot/Home.jpg);
+  background-image: linear-gradient(rgba(26, 10, 10, 0.007),rgba(19, 11, 11, 0.7)),url(../Fotot/Home.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -267,6 +267,7 @@ main{
 
 .container-box:hover{
   transform: translateY(-15px);
+  border: 2px solid gray;
 
 }
 
@@ -287,6 +288,7 @@ main{
   margin-bottom: 8px;
   font-family: 'Copperplate Gothic Light';
 }
+
 
 .footer{
   height: 250px;

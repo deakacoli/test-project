@@ -1,3 +1,18 @@
+<?php
+session_start();
+$hide="";
+if(!isset($_SESSION['email'])){
+    header("location:kycu.php");
+}else{
+    if($_SESSION['role'] == "admin"){
+        $hide="";
+    }else{
+        $hide="hide";
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,17 +20,37 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eksploro Kosovën</title>
-        <link rel="stylesheet" href="Rreth Nesh.css">
+        <link rel="stylesheet" href="./css/home.css">
         <link rel="icon" type="image/x-icon" href="./Fotot/icon.png">
     </head>    
         <body>
             <header>
+            <style>
+                 .hide{
+                   display:none;
+                 }
+
+                   #pad{
+                    padding:30px;
+                   }
+            </style>
+
                 <div class="header">
                     <div class="navbar">
-                        <a class="header-text" href="Rreth Nesh.php">RRETH NESH</a>
-                        <a class="header-text" href="Komunat.php">KOMUNAT</a>
-                        <a class="header-text" href="Destinacionet.php">DESTINACIONET</a>
-                        <a class="header-text" href="Kycu.php">KYÇU</a>
+                        <a class="header-text" href="home.php">RRETH NESH</a>
+                        <a class="header-text" href="komunat.php">KOMUNAT</a>
+                        <a class="header-text" href="kontakti.php">KONTAKTI</a>
+
+                        <?php
+                             if (!(isset($_SESSION['role']))) {
+                                echo "<a class='ula' id='pad' href='kycu.php'>KYÇU</a>";
+                            } else if (isset($_SESSION['role']) == 'user') {
+                                echo "<a class='ula' id='pad' href='logout.php'>ÇKYÇU</a>";
+                            }
+                         ?>
+
+                        <a  href="dashboard.php" style="padding: 30px;" class="<?=$hide?>">DASHBOARD</a>
+                       
                     </div>  
                 </div>
             </header>
@@ -105,14 +140,14 @@
                             <div class="container-img">
                                 <img src="./Fotot/travel1.png"/>
                             </div>
-                               <a style=" color:black; text-decoration: none; font-size: 20px; font-weight: 600; font-family: 'Copperplate Gothic Light';" href="Ushqimet Tradicionale.php">Ushqimet Tradicionale</a>
+                               <a style=" color:black; text-decoration: none; font-size: 20px; font-weight: 600; font-family: 'Copperplate Gothic Light';" href="ushqimettradicionale.php">Ushqimet Tradicionale</a>
                         </div>
 
                         <div class="container-box">
                             <div class="container-img">
                                 <img src="./Fotot/travel2.png"/>
                             </div>
-                            <a style=" color:black; text-decoration: none; font-size: 20px; font-weight: 600; font-family: 'Copperplate Gothic Light';" href="Aktivitetet.php">Aktivitetet sipas stinëve</a>
+                            <a style=" color:black; text-decoration: none; font-size: 20px; font-weight: 600; font-family: 'Copperplate Gothic Light';" href="aktivitetet.php">Aktivitetet sipas stinëve</a>
                         </div>
 
                         <div class="container-box">
@@ -147,9 +182,15 @@
                 </div>
             </footer>
 
-            <script src="explorekosovo.js"></script>
+            
         </body>
 </html>
+
+<?php
+
+}
+
+?>
 
 
 
