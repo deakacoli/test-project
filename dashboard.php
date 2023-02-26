@@ -55,9 +55,53 @@ if(!isset($_SESSION['email'])){
             </div>
         </div>
 
+        <div class="container1">
+            <h1>Adminët e Faqes</h1>
+  <div class="row">
+    <div class="col" id="col1">
+      <img src="./Fotot/admin1.png" alt="Anda">
+      <p>Anda Pilingjurka</p>
+      <br>
+      <ul>
+            <li><b>Email:</b> apilingjurka@gmail.com</li>
+            <br>
+            <li><b>Nr.Tel:</b> 049111222</li>
+            <br>
+            <li><b>Vendbanimi:</b> Prishtinë</li>
+            <br>
+            <li><b>Profesioni:</b> WEB Developer</li>
+
+
+      </ul>
+      
+    </div>
+    <div class="col" id="col2">
+      <img src="./Fotot/admin2.png" alt="Dea">
+      <p>Dea Kacoli</p>
+      <br>
+      <ul>
+            <li><b>Email:</b> dkacoli@gmail.com</li>
+            <br>
+            <li><b>Nr.Tel:</b> 049111333</li>
+            <br>
+            <li><b>Vendbanimi:</b> Pejë</li>
+            <br>
+            <li><b>Profesioni:</b> WEB Developer</li>
+
+
+      </ul>
+    </div>
+  </div>
+</div>
         
+
+
+
+
 </body>
 </html>
+
+
 
 <?php
 
